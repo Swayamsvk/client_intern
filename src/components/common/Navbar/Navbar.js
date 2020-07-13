@@ -1,33 +1,44 @@
 import React from "react";
 import "./Navbar.css";
-const Navbar = () => {
+import DrawerToggleButton from "./DrawerToggleButton";
+const Navbar = (props) => {
   return (
     <div>
       <nav>
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">
-            Web Zone
+            NEXTLEVELBOT
           </a>
-
-          <ul className="right hide-on-med-and-down">
-            <li>
-              <a href="#" className="red">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Theme</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
+          <div className="toolbar_toggle_item">
+            <ul className="right hide-on-med-and-down">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Price</a>
+              </li>
+              <li>
+                <a href="#">Syntax</a>
+              </li>
+              <li>
+                <a href="#">Aliceblue Symbol</a>
+              </li>
+              <li>
+                <a href="#">Videos</a>
+              </li>
+              <li>
+                <a href="#">Resources</a>
+              </li>
+              <li>
+                <a href="#" className="red">
+                  Log in
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="toolbar_toggle_button">
+            <DrawerToggleButton click={props.drawerClickHandler} />
+          </div>
         </div>
       </nav>
     </div>

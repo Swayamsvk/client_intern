@@ -17,3 +17,26 @@ section {
 nav li a:hover {
   background: red;
 }
+
+.toolbar_toggle_item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar_toggle_item li {
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .toolbar_toggle_item {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .toolbar_toggle_button {
+    display: none;
+  }
+}
