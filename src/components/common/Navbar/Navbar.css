@@ -1,0 +1,19 @@
+nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0px 20px;
+}
+
+section {
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+.box {
+  margin-top: 20px;
+  height: 1000px;
+}
+
+nav li a:hover {
+  background: red;
+}
