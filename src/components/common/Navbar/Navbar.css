@@ -16,6 +16,7 @@ section {
 
 nav li a:hover {
   background: red;
+  color: white;
 }
 
 .toolbar_toggle_item ul {
